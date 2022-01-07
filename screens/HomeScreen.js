@@ -1,37 +1,26 @@
-import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
-
+import React from 'react';
+import {StyleSheet, Text, View, Button} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const HomeScreens = ({ navigation }) => {
-    return ( <
-        View style = { styles.container } >
-        <
-        Ionicons name = 'home'
-        size = { 30 }
-        color = 'skyblue' / >
-        <
-        Text > หน้ าหลั ก < /Text> <
-        Button title = "Go To About"
-        onPress = {
-            () => navigation.navigate('About', {
-                email: 'ch.phurichaya_st@tni.ac.th'
+const HomeScreen = ({navigation}) => {
+  return (
+    <View style={styles.container}>
+      <Ionicons name='home' size={30} color=' skyblue'/>
+      <Text>หน้าหลัก</Text>
+      <Button
+        title="Go to About"
+        onPress={() => navigation.navigate('About' , {email:ch.phurichaya_st@tni.ac.th'})} 
+      />
+    </View>
+  );
+};
 
-            })
-        }
-        /> < /
-        View >
-
-    )
-}
-
-export default HomeScreens
+export default HomeScreen;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-
-    }
-})
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
