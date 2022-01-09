@@ -5,7 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Ionicons name='home' size={30} color=' skyblue'/>
+      <Ionicons name='home' size={30} color= 'skyblue'/>
       <Text>หน้าหลัก</Text>
       <Button
         title="Go to About"
