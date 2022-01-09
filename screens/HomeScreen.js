@@ -9,7 +9,7 @@ const HomeScreen = ({navigation}) => {
       <Text>หน้าหลัก</Text>
       <Button
         title="Go to About"
-        onPress={() => navigation.navigate('About' , {email:ch.phurichaya_st@tni.ac.th'})} 
+        onPress={() => navigation.navigate('About' , {email:'ch.phurichaya_st@tni.ac.th'})} 
       />
     </View>
   );
