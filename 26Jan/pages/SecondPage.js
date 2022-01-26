@@ -17,7 +17,7 @@ const SecondPage = ({ navigation }) => {
             title="Go to Third Page"
             onPress={() => navigation.navigate("ThirdPage")}
           />
-<View style ={{bottom:10, position:"absolute"}}>
+          <View style ={{bottom:10, position:"absolute"}}>
             <Text style={styles.textBottomStyle}>Thai-Nichi Institute of Technology</Text>
           </View>
         </View>

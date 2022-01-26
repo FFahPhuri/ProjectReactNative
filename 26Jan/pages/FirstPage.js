@@ -20,10 +20,10 @@ const FirstPage = ({ navigation }) => {
               onPress={() => navigation.navigate("ThirdPage")}
             />
           </View>
-        </View>
-            <View style ={{bottom:10, position:"absolute"}}>
+          <View style ={{bottom:10, position:"absolute"}}>
             <Text style={styles.textBottomStyle}>Thai-Nichi Institute of Technology</Text>
           </View>
+        </View>
       </View>
     </SafeAreaView>
   );
