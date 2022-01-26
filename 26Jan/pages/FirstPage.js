@@ -21,6 +21,9 @@ const FirstPage = ({ navigation }) => {
             />
           </View>
         </View>
+            <View style ={{bottom:10, position:"absolute"}}>
+            <Text style={styles.textBottomStyle}>Thai-Nichi Institute of Technology</Text>
+          </View>
       </View>
     </SafeAreaView>
   );
