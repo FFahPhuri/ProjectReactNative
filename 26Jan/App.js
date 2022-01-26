@@ -1,18 +1,19 @@
 import React from "react";
+import { View, Image, TouchableOpacity } from "react-native";
+
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator, HeaderTitle } from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
+
 import FirstPage from "./pages/FirstPage";
 import SecondPage from "./pages/SecondPage";
 import ThirdPage from "./pages/ThirdPage";
-
-import { View, Image, TouchableOpacity } from "react-native";
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 const NavigationDrawerStructure = (props) => {
-  //Structure for navigation drawer
+  //Structure for the Navigation Drawer
   const toggleDrawer = () => {
     props.navigationProps.toggleDrawer();
   };
@@ -20,7 +21,7 @@ const NavigationDrawerStructure = (props) => {
     <View style={{ flexDirection: "row" }}>
       <TouchableOpacity onPress={() => toggleDrawer()}>
         <Image
-          source={(require = "C:/rnproject/assets/drawerWhite.png")}
+          source={require("C:/rnproject/assets/drawerWhite.png")}
           style={{ width: 25, height: 25, marginLeft: 5 }}
         />
       </TouchableOpacity>
@@ -32,15 +33,13 @@ function firstScreenStack({ navigation }) {
   return (
     <Stack.Navigator
       initialRouteName="FirstPage"
-      screeOptions={{
-        //set header color
-        headerStyle: {
-          backgroudColor: "#654321",
-          //set header text color
-          headerTintColor: "#fff",
-          //set Header Text weight
-          headerTitleStyle: { fontWeight: "bold" },
-        },
+      screenOptions={{
+        //Set Header Color
+        headerStyle: { backgroundColor: "#654321" },
+        //Set Header Text Color
+        headerTintColor: "#fff",
+        //Set Header Test Style
+        headerTitleStyle: { fontWeight: "bold" },
         headerLeft: () => (
           <NavigationDrawerStructure navigationProps={navigation} />
         ),
@@ -60,15 +59,13 @@ function secondScreenStack({ navigation }) {
   return (
     <Stack.Navigator
       initialRouteName="FirstPage"
-      screeOptions={{
-        //set header color
-        headerStyle: {
-          backgroudColor: "#654321",
-          //set header text color
-          headerTintColor: "#fff",
-          //set Header Text weight
-          headerTitleStyle: { fontWeight: "bold" },
-        },
+      screenOptions={{
+        //Set Header Color
+        headerStyle: { backgroundColor: "#654321" },
+        //Set Header Text Color
+        headerTintColor: "#fff",
+        //Set Header Test Style
+        headerTitleStyle: { fontWeight: "bold" },
         headerLeft: () => (
           <NavigationDrawerStructure navigationProps={navigation} />
         ),
